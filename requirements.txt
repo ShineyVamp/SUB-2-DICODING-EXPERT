@@ -5,4 +5,4 @@ numpy==2.3.0
 pandas==1.5.3
 scikit_learn==1.2.2
 seaborn==0.12.1
-streamlit==1.25.0
+streamlit==1.45.0
