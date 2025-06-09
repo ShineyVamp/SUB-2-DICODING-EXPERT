@@ -26,6 +26,7 @@ melakukan pengecekan awal data seperti null & duplicate
 Membaca dataset data.csv
 
 Membersihkan data:
+Menghapus baris yang tidak perlu
 Encoding variabel kategorikal (Label encoding)
 Feature selection
 
@@ -89,7 +90,7 @@ hasil prediksi akan muncul
 ```
 
 ## Conclusion
-Setelah analisis yang dilakukan saya menemukan bahwa beberapa penyebab dari meningkatnya Dropout pada institut ialah Age_at_enrollment, Application_mode, Gender, Debtor memiliki tingkat korelasi rendah dengan Status yang berarti masalah dropout berdasarkan fitur tersebut dan yang membuat siswa tidak dropout ialah faktor nilai(semakin tinggi semakin Lulus): Curricular_units_2nd_sem_approved, Curricular_units_1st_sem_approved, Curricular_units_2nd_sem_grade, Curricular_units_1st_sem_grade. Faktor ekonomi(Jika iya maka semakin Lulus): Tuition_fees_up_to_date, Scholarship_holder.
+Setelah analisis yang dilakukan saya menemukan bahwa beberapa penyebab dari meningkatnya Dropout pada institut ialah Age_at_enrollment, Application_mode, Gender, Debtor memiliki tingkat korelasi rendah dengan Status yang berarti masalah dropout berdasarkan fitur tersebut dan yang membuat siswa tidak dropout ialah faktor nilai(semakin tinggi nilai dan CU yang di approve semakin Lulus): Curricular_units_2nd_sem_approved, Curricular_units_1st_sem_approved, Curricular_units_2nd_sem_grade, Curricular_units_1st_sem_grade. Faktor ekonomi(Jika iya maka semakin Lulus): Tuition_fees_up_to_date, Scholarship_holder.
 
 ### Rekomendasi Action Items
 1. Pendekatan Personal dan Psikososial
