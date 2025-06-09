@@ -37,7 +37,7 @@ Distribusi usia masuk berdasarkan status (BoxPlot)
 Distribusi faktor ekonomi berdasarkan status
 
 3.Modeling: Predictive Machine Learning
-Menentukan target: apakah Dropout/Enrolled/Graduated
+Menentukan target: apakah Dropout/Graduated
 
 Model yang digunakan:
 Random Forest
@@ -57,7 +57,7 @@ KPI utama (Total Siswa, Dropout Rate, Jumlah Dropout)
 Visualisasi fitur terhadap Status (histogram)
 ### Persiapan
 
-Sumber data yang kita dapatkan kali ini adalah data siswa dari Jaya Jaya Institut yang tidak menyelesaikan pendidikan(dropout), sedang menjalani(enrolled), lulus(graduate) sesuai dengan nilai yang ada pada dataset,dataset ini memiliki banyak kolom yang dapat membantu kita menganalisis tingkat dropout pada Jaya Jaya Institut
+Sumber data yang kita dapatkan kali ini adalah data siswa dari Jaya Jaya Institut yang tidak menyelesaikan pendidikan(dropout), lulus(graduate) sesuai dengan nilai yang ada pada dataset,dataset ini memiliki banyak kolom yang dapat membantu kita menganalisis tingkat dropout pada Jaya Jaya Institut
 berikut link dataset yang kita gunakan : (https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/data.csv)
 
 Setup environment - Shell/Terminal (Download File):
