@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import joblib
 
-model = joblib.load("model.pkl")
+model = joblib.load("model/model.pkl")
 
 # Judul Aplikasi
 st.title("Prediksi Status Mahasiswa (Dropout, Enrolled, Graduate)")
