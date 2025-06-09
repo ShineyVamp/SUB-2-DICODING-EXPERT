@@ -10,7 +10,7 @@ st.set_page_config(page_title="Prediksi Status Mahasiswa", layout="wide")
 
 # Judul
 st.markdown("<h1 style='text-align: center; color: #4B8BBE;'>Prediksi Status Mahasiswa</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: #646464;'>Dropout | Enrolled | Graduate</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: #646464;'>Dropout or Graduate</h4>", unsafe_allow_html=True)
 st.write("")
 
 # Form input
@@ -45,8 +45,7 @@ if submit_button:
     pred = model.predict(input_data)[0]
     status_dict = {
         0: ("Dropout", "#FF4B4B"),
-        1: ("Enrolled", "#FFC107"),
-        2: ("Graduate", "#4CAF50")
+        1: ("Graduate", "#4CAF50")
     }
 
     pred_label, color = status_dict[pred]
