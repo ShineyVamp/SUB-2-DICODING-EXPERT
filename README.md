@@ -71,7 +71,7 @@ pip install -r requirements.txt
 ```
 ## Business Dashboard
 saya membuat dashboard ini untuk membantu mengidentifikasi kelompok siwa yang tidak menyelesaikan pendidikannya, sehingga institut dapat mengambil langkah strategis untuk mengurangi tingkat siswa yang tidak menyelesaikan pendidikannya dan memperbaiki sistem internal nya.
-berikut link untuk menuju dashboard saya: https://lookerstudio.google.com/reporting/046860d8-f535-40dd-adaa-ed085a542369
+berikut link untuk menuju dashboard saya: (https://lookerstudio.google.com/reporting/046860d8-f535-40dd-adaa-ed085a542369)
 
 ## Menjalankan Sistem Machine Learning
 ```
