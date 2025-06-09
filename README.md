@@ -11,8 +11,50 @@ Nah, Anda diminta untuk membantu Jaya Jaya Institut dalam menyelesaikan permasal
 Banyak siswa yang tidak menyelesaikan pendidikannya/dropout.
 
 ### Cakupan Proyek
-Tuliskan cakupan proyek yang akan dikerjakan.
+#### Analisis dan Prediksi Employee Attrition dengan Python dan Google Looker Studio
 
+##### Tujuan:
+Membangun sistem analisis menyeluruh untuk memahami faktor-faktor yang memengaruhi tingkat dropout siswa dan membuat model prediksi apakah seorang siswa menyelesaikan pendidikannya atau tidak. Hasil akhir divisualisasikan dalam dashboard interaktif menggunakan Google Looker Studio.
+
+##### Cakupan Proyek:
+1.Data Understanding
+Membaca dataset data.csv
+Memahami struktur data 
+melakukan pengecekan awal data seperti null & duplicate
+
+2.Data Preparation / Preprocessing
+Membaca dataset data.csv
+
+Membersihkan data:
+Encoding variabel kategorikal (Label encoding)
+Feature selection
+
+Eksplorasi data awal (EDA):
+Distribusi data Status
+Korelasi fitur terhadap Status
+Melihat jumlah dropout tiap jurusan
+Distribusi usia masuk berdasarkan status (BoxPlot)
+Distribusi faktor ekonomi berdasarkan status
+
+3.Modeling: Predictive Machine Learning
+Menentukan target: apakah Dropout/Enrolled/Graduated
+
+Model yang digunakan:
+Random Forest
+
+Splitting data: 
+Train-Test split
+
+Evaluasi model:
+Accuracy, Precision, Recall, F1-score
+Confusion Matrix
+
+4.Dashboard Visualisasi (Google Looker Studio)
+Menyambungkan Google Sheets hasil preprocessing ke Looker Studio
+
+Menampilkan:
+KPI utama (Total Siswa, Dropout Rate, Jumlah Dropout)
+Visualisasi fitur terhadap Status (histogram)
 ### Persiapan
 
 Sumber data yang kita dapatkan kali ini adalah data siswa dari Jaya Jaya Institut yang tidak menyelesaikan pendidikan(dropout), sedang menjalani(enrolled), lulus(graduate) sesuai dengan nilai yang ada pada dataset,dataset ini memiliki banyak kolom yang dapat membantu kita menganalisis tingkat dropout pada Jaya Jaya Institut
@@ -27,9 +69,14 @@ pipenv install
 pipenv shell
 pip install -r requirements.txt
 ```
+## Business Dashboard
+saya membuat dashboard ini untuk membantu mengidentifikasi kelompok siwa yang tidak menyelesaikan pendidikannya, sehingga institut dapat mengambil langkah strategis untuk mengurangi tingkat siswa yang tidak menyelesaikan pendidikannya dan memperbaiki sistem internal nya.
+berikut link untuk menuju dashboard saya: https://lookerstudio.google.com/reporting/046860d8-f535-40dd-adaa-ed085a542369
+
+## Menjalankan Sistem Machine Learning
 ```
-2.Prediksi (Melalui StreamlitCloud)
-ketik %run /path_dari_file.py
+1.Prediksi (Melalui StreamlitCloud)
+klik link berikut : https://sub2dicoding.streamlit.app/
 isi data sesuai petunjuk
 hasil prediksi akan muncul
 ```
@@ -41,20 +88,21 @@ isi data sesuai petunjuk
 hasil prediksi akan muncul
 ```
 
-## Business Dashboard
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
-
-## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
-
-```
-
-```
-
 ## Conclusion
-Jelaskan konklusi dari proyek yang dikerjakan.
+Setelah analisis yang dilakukan saya menemukan bahwa beberapa penyebab dari meningkatnya Dropout pada institut ialah Age_at_enrollment, Application_mode, Gender, Debtor memiliki tingkat korelasi rendah dengan Status yang berarti masalah dropout berdasarkan fitur tersebut dan yang membuat siswa tidak dropout ialah faktor nilai(semakin tinggi semakin Lulus): Curricular_units_2nd_sem_approved, Curricular_units_1st_sem_approved, Curricular_units_2nd_sem_grade, Curricular_units_1st_sem_grade. Faktor ekonomi(Jika iya maka semakin Lulus): Tuition_fees_up_to_date, Scholarship_holder.
 
 ### Rekomendasi Action Items
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-- action item 1
-- action item 2
+1. Pendekatan Personal dan Psikososial
+  - Mentoring dan konseling untuk mahasiswa usia kerja (20-30 tahun).
+  - Komunitas dukungan untuk mahasiswa laki-laki.
+  - Exit interview bagi mahasiswa yang mengundurkan diri untuk menggali alasan utama dropout.
+2. Pendekatan Finansial
+  - Skema bantuan keuangan, keringanan cicilan, dan beasiswa khusus bagi mahasiswa debitur.
+  - Sistem monitoring berkala terhadap performa akademik mahasiswa peminjam.
+3. Pendekatan Akademik
+  - Evaluasi kurikulum di program studi dengan angka dropout tinggi.
+  - Early warning system untuk mendeteksi dini risiko dropout (berdasarkan absensi, nilai, dan partisipasi).
+  - Pengembangan program kuliah malam/fleksibel untuk mahasiswa pekerja.
+4. Pendekatan Penerimaan Mahasiswa Baru
+  - Evaluasi jalur penerimaan mahasiswa yang menghasilkan dropout tinggi.
+  - Perbaikan proses seleksi, pembekalan awal, dan orientasi akademik untuk mahasiswa baru dari jalur tersebut
