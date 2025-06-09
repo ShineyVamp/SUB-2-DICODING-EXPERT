@@ -36,7 +36,7 @@ hasil prediksi akan muncul
 ```
 2.Prediksi (Lewat Terminal)
 cd SUB-2-DICODING-EXPERT
-streamlit run dashboard.py
+streamlit run app.py
 ```
 
 ## Business Dashboard
