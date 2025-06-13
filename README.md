@@ -1,14 +1,16 @@
 # Proyek Akhir: Menyelesaikan Permasalahan Jaya Jaya Institut
 
 ## Business Understanding
-Jaya Jaya Institut merupakan salah satu institusi pendidikan perguruan yang telah berdiri sejak tahun 2000. Hingga saat ini ia telah mencetak banyak lulusan dengan reputasi yang sangat baik. Akan tetapi, terdapat banyak juga siswa yang tidak menyelesaikan pendidikannya alias dropout.
+Jaya Jaya Institut merupakan institusi pendidikan tinggi yang telah beroperasi sejak tahun 2000 dan berhasil mencetak banyak lulusan berkualitas. Namun, dalam beberapa tahun terakhir, tingkat siswa yang tidak menyelesaikan pendidikannya (dropout) mengalami peningkatan yang signifikan.
 
-Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar untuk sebuah institusi pendidikan. Oleh karena itu, Jaya Jaya Institut ingin mendeteksi secepat mungkin siswa yang mungkin akan melakukan dropout sehingga dapat diberi bimbingan khusus.
+Tingginya tingkat dropout menjadi tantangan besar karena dapat mencoreng reputasi institusi dan berdampak pada akreditasi serta kepercayaan publik. Oleh karena itu, institusi memiliki kebutuhan untuk mendeteksi secara dini siswa yang berpotensi dropout, sehingga dapat diberikan intervensi tepat waktu.
 
-Nah, Anda diminta untuk membantu Jaya Jaya Institut dalam menyelesaikan permasalahannya.Mereka juga meminta Anda untuk membuatkan dashboard agar mereka mudah dalam memahami data dan memonitor performa siswa. 
+Untuk mendukung upaya tersebut, dilakukan analisis data untuk mengidentifikasi faktor-faktor utama yang berkontribusi terhadap dropout. Selain itu, dashboard visual juga dikembangkan untuk memudahkan pemantauan dan pengambilan keputusan berbasis data oleh pihak manajemen.
 
 ### Permasalahan Bisnis
-Banyak siswa yang tidak menyelesaikan pendidikannya/dropout.
+Jaya Jaya Institut menghadapi masalah serius berupa meningkatnya jumlah siswa yang tidak menyelesaikan pendidikan (dropout). Fenomena ini berdampak negatif terhadap reputasi, akreditasi, serta target kelulusan institusi.
+
+Jika tidak segera ditangani, kondisi ini dapat menurunkan kepercayaan masyarakat, menyebabkan kerugian finansial, serta menghambat pencapaian indikator kinerja institusi. Oleh karena itu, penting untuk memahami karakteristik dan faktor-faktor yang menyebabkan dropout agar dapat dilakukan tindakan preventif dan perbaikan sistem secara menyeluruh.
 
 ### Cakupan Proyek
 #### Analisis dan Prediksi Employee Attrition dengan Python dan Google Looker Studio
@@ -71,7 +73,15 @@ pipenv shell
 pip install -r requirements.txt
 ```
 ## Business Dashboard
-saya membuat dashboard ini untuk membantu mengidentifikasi kelompok siwa yang tidak menyelesaikan pendidikannya, sehingga institut dapat mengambil langkah strategis untuk mengurangi tingkat siswa yang tidak menyelesaikan pendidikannya dan memperbaiki sistem internal nya.
+Dashboard ini dikembangkan untuk membantu pihak manajemen Jaya Jaya Institut dalam mengidentifikasi pola dan karakteristik siswa yang mengalami dropout.
+
+Beberapa fitur penting dalam dashboard ini meliputi:
+1.Total Siswa, Jumlah Dropout, dan Persentase Dropout: Menyediakan gambaran umum mengenai tingkat penyelesaian pendidikan di institusi.
+2.Distribusi Dropout berdasarkan Gender, Status Debitur, Usia, dan Mode Aplikasi: Membantu dalam mengenali kelompok siswa yang lebih rentan mengalami dropout.
+3.Dropout by Course: Menampilkan mata kuliah atau jurusan dengan tingkat dropout tertinggi.
+4.Status vs Application Mode dan Rentang Usia: Memberikan insight tambahan berdasarkan segmentasi untuk mendukung kebijakan yang lebih tepat sasaran.
+
+Dari visualisasi yang ditampilkan, terlihat bahwa dropout cukup signifikan pada kelompok usia tertentu dan pada jalur aplikasi tertentu. Dashboard ini berfungsi sebagai alat monitoring strategis yang memudahkan proses pengambilan keputusan berbasis data oleh pihak institusi.
 berikut link untuk menuju dashboard saya: (https://lookerstudio.google.com/reporting/046860d8-f535-40dd-adaa-ed085a542369)
 
 ## Menjalankan Sistem Machine Learning
@@ -90,7 +100,23 @@ hasil prediksi akan muncul
 ```
 
 ## Conclusion
-Setelah analisis yang dilakukan saya menemukan bahwa beberapa penyebab dari meningkatnya Dropout pada institut ialah Age_at_enrollment, Application_mode, Gender, Debtor memiliki tingkat korelasi rendah dengan Status yang berarti masalah dropout berdasarkan fitur tersebut dan yang membuat siswa tidak dropout ialah faktor nilai(semakin tinggi nilai dan CU yang di approve semakin Lulus): Curricular_units_2nd_sem_approved, Curricular_units_1st_sem_approved, Curricular_units_2nd_sem_grade, Curricular_units_1st_sem_grade. Faktor ekonomi(Jika iya maka semakin Lulus): Tuition_fees_up_to_date, Scholarship_holder.
+Berdasarkan hasil analisis data, ditemukan bahwa beberapa fitur memiliki kontribusi penting dalam menentukan status dropout siswa, antara lain:
+1.Usia saat pendaftaran (Age_at_enrollment): Usia yang lebih tinggi meningkatkan risiko dropout.
+2.Application_mode: Terdapat jalur masuk tertentu yang memiliki tingkat dropout lebih tinggi dibandingkan yang lain.
+3.Gender: Terdapat perbedaan proporsi dropout antara siswa laki-laki dan perempuan.
+4.Debtor: Siswa yang memiliki status debtor menunjukkan kecenderungan lebih tinggi untuk dropout, sehingga faktor ekonomi ini perlu menjadi perhatian khusus.
+
+Faktor akademik menunjukkan hubungan yang kuat terhadap kemungkinan kelulusan. Semakin tinggi nilai dan jumlah curricular units yang disetujui atau diselesaikan, maka semakin besar kemungkinan siswa untuk lulus:
+1.Curricular_units_2nd_sem_approved
+2.Curricular_units_1st_sem_approved
+3.Curricular_units_2nd_sem_grade
+4.Curricular_units_1st_sem_grade
+
+Faktor ekonomi juga memiliki peran penting:
+1.Tuition_fees_up_to_date: Siswa yang selalu membayar biaya kuliah tepat waktu cenderung memiliki peluang kelulusan yang lebih tinggi.
+2.Scholarship_holder: Siswa penerima beasiswa menunjukkan tingkat kelulusan yang lebih baik dibandingkan yang tidak menerima beasiswa.
+
+Kesimpulan ini dapat menjadi dasar dalam menyusun strategi, seperti pemberian dukungan akademik tambahan dan bantuan keuangan, untuk menurunkan tingkat dropout di Jaya Jaya Institut.
 
 ### Rekomendasi Action Items
 1. Pendekatan Personal dan Psikososial
