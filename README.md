@@ -5,7 +5,7 @@ Jaya Jaya Institut merupakan institusi pendidikan tinggi yang telah beroperasi s
 
 Tingginya tingkat dropout menjadi tantangan besar karena dapat mencoreng reputasi institusi dan berdampak pada akreditasi serta kepercayaan publik. Oleh karena itu, institusi memiliki kebutuhan untuk mendeteksi secara dini siswa yang berpotensi dropout, sehingga dapat diberikan intervensi tepat waktu.
 
-Untuk mendukung upaya tersebut, dilakukan analisis data untuk mengidentifikasi faktor-faktor utama yang berkontribusi terhadap dropout. Selain itu, dashboard visual juga dikembangkan untuk memudahkan pemantauan dan pengambilan keputusan berbasis data oleh pihak manajemen.
+Untuk mendukung upaya tersebut, dilakukan analisis data untuk mengidentifikasi faktor-faktor utama yang berkontribusi terhadap dropout. Selain itu, dashboard visual juga dikembangkan untuk memudahkan pemantauan dan pengambilan keputusan berbasis data oleh pihak institusi.
 
 ### Permasalahan Bisnis
 Jaya Jaya Institut menghadapi masalah serius berupa meningkatnya jumlah siswa yang tidak menyelesaikan pendidikan (dropout). Fenomena ini berdampak negatif terhadap reputasi, akreditasi, serta target kelulusan institusi.
@@ -60,7 +60,7 @@ KPI utama (Total Siswa, Dropout Rate, Jumlah Dropout)
 Visualisasi fitur terhadap Status (histogram)
 ### Persiapan
 
-Sumber data yang kita dapatkan kali ini adalah data siswa dari Jaya Jaya Institut yang tidak menyelesaikan pendidikan(dropout), lulus(graduate) sesuai dengan nilai yang ada pada dataset,dataset ini memiliki banyak kolom yang dapat membantu kita menganalisis tingkat dropout pada Jaya Jaya Institut
+Sumber data yang kita dapatkan kali ini adalah data siswa dari Jaya Jaya  yang tidak menyelesaikan pendidikan(dropout), lulus(graduate) sesuai dengan nilai yang ada pada dataset,dataset ini memiliki banyak kolom yang dapat membantu kita menganalisis tingkat dropout pada Jaya Jaya 
 berikut link dataset yang kita gunakan : (https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/data.csv)
 
 Setup environment - Shell/Terminal (Download File):
@@ -83,7 +83,7 @@ Beberapa fitur penting dalam dashboard ini meliputi:
 
 3.Dropout by Course: Menampilkan mata kuliah atau jurusan dengan tingkat dropout tertinggi.
 
-4.Status vs Application Mode dan Rentang Usia: Memberikan insight tambahan berdasarkan segmentasi untuk mendukung kebijakan yang lebih tepat sasaran.
+4.Status vs Application Mode dan Rentang Usia: Memberikan insight tambahan berdasarkan segmentasi untuk mendukung strategi yang lebih tepat.
 
 Dari visualisasi yang ditampilkan, terlihat bahwa dropout cukup signifikan pada kelompok usia tertentu dan pada jalur aplikasi tertentu. Dashboard ini berfungsi sebagai alat monitoring strategis yang memudahkan proses pengambilan keputusan berbasis data oleh pihak institusi.
 berikut link untuk menuju dashboard saya: (https://lookerstudio.google.com/reporting/046860d8-f535-40dd-adaa-ed085a542369)
