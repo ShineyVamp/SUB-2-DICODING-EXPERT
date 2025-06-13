@@ -76,9 +76,13 @@ pip install -r requirements.txt
 Dashboard ini dikembangkan untuk membantu pihak manajemen Jaya Jaya Institut dalam mengidentifikasi pola dan karakteristik siswa yang mengalami dropout.
 
 Beberapa fitur penting dalam dashboard ini meliputi:
+
 1.Total Siswa, Jumlah Dropout, dan Persentase Dropout: Menyediakan gambaran umum mengenai tingkat penyelesaian pendidikan di institusi.
+
 2.Distribusi Dropout berdasarkan Gender, Status Debitur, Usia, dan Mode Aplikasi: Membantu dalam mengenali kelompok siswa yang lebih rentan mengalami dropout.
+
 3.Dropout by Course: Menampilkan mata kuliah atau jurusan dengan tingkat dropout tertinggi.
+
 4.Status vs Application Mode dan Rentang Usia: Memberikan insight tambahan berdasarkan segmentasi untuk mendukung kebijakan yang lebih tepat sasaran.
 
 Dari visualisasi yang ditampilkan, terlihat bahwa dropout cukup signifikan pada kelompok usia tertentu dan pada jalur aplikasi tertentu. Dashboard ini berfungsi sebagai alat monitoring strategis yang memudahkan proses pengambilan keputusan berbasis data oleh pihak institusi.
@@ -101,19 +105,29 @@ hasil prediksi akan muncul
 
 ## Conclusion
 Berdasarkan hasil analisis data, ditemukan bahwa beberapa fitur memiliki kontribusi penting dalam menentukan status dropout siswa, antara lain:
+
 1.Usia saat pendaftaran (Age_at_enrollment): Usia yang lebih tinggi meningkatkan risiko dropout.
+
 2.Application_mode: Terdapat jalur masuk tertentu yang memiliki tingkat dropout lebih tinggi dibandingkan yang lain.
+
 3.Gender: Terdapat perbedaan proporsi dropout antara siswa laki-laki dan perempuan.
+
 4.Debtor: Siswa yang memiliki status debtor menunjukkan kecenderungan lebih tinggi untuk dropout, sehingga faktor ekonomi ini perlu menjadi perhatian khusus.
 
 Faktor akademik menunjukkan hubungan yang kuat terhadap kemungkinan kelulusan. Semakin tinggi nilai dan jumlah curricular units yang disetujui atau diselesaikan, maka semakin besar kemungkinan siswa untuk lulus:
+
 1.Curricular_units_2nd_sem_approved
+
 2.Curricular_units_1st_sem_approved
+
 3.Curricular_units_2nd_sem_grade
+
 4.Curricular_units_1st_sem_grade
 
 Faktor ekonomi juga memiliki peran penting:
+
 1.Tuition_fees_up_to_date: Siswa yang selalu membayar biaya kuliah tepat waktu cenderung memiliki peluang kelulusan yang lebih tinggi.
+
 2.Scholarship_holder: Siswa penerima beasiswa menunjukkan tingkat kelulusan yang lebih baik dibandingkan yang tidak menerima beasiswa.
 
 Kesimpulan ini dapat menjadi dasar dalam menyusun strategi, seperti pemberian dukungan akademik tambahan dan bantuan keuangan, untuk menurunkan tingkat dropout di Jaya Jaya Institut.
